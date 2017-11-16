@@ -110,7 +110,7 @@ def read_tower_inventory(tower_host, tower_user, tower_pass, inventory, license_
         reason = "Connection to remote host failed: {}".format(e)
     except json.JSONDecodeError, e:
         reason = "Failed to parse json from host: {}".format(e)
-    print(reason)
+    raise RuntimeError(reason)
     sys.exit(1)
 
 
@@ -127,6 +127,7 @@ def main():
             inventory_hosts
         )
     )
+
 
 if __name__ == '__main__':
     main()
