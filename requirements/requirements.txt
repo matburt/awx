@@ -42,6 +42,7 @@ docutils==0.14            # via botocore
 enum34==1.1.6             # via cryptography
 functools32==3.2.3.post2  # via jsonschema
 futures==3.2.0            # via requests-futures
+hvac==0.7.0
 hyperlink==18.0.0         # via twisted
 idna==2.6                 # via cryptography, hyperlink, requests
 incremental==17.5.0       # via twisted
